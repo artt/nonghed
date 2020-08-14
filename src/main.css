@@ -1,0 +1,70 @@
+body {
+  margin: 0 1rem;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background-color: #282c34;
+}
+
+#main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: white;
+}
+@media only screen and (min-width: 700px) {
+  #main {
+    font-size: 1rem;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+#logo {
+  max-width: 200px;
+}
+@media only screen and (min-width: 700px) {
+  #logo {
+    max-width: 300px;
+  }
+}
+
+#description {
+  max-width: 400px;
+}
+
+#add {
+  padding: 2rem;
+  width: 50px;
+}
+
+.social-button {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  align-items: center;
+  width: 150px;
+  padding: 0.5rem;
+  border-radius: 9px;
+}
+.social-button svg {
+  width: 30px;
+}
+
+.color-line {
+  fill: green;
+  background: green;
+}
+
+df-messenger div.chat-wrapper[opened=true] {
+  height: 300px !important;
+  width: 300px;
+  color: red;
+}
+
+/*# sourceMappingURL=main.css.map */
