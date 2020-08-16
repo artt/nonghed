@@ -1,70 +1,118 @@
 :root {
-  // --df-messenger-button-titlebar-color: red !important;
+	// --df-messenger-button-titlebar-color: red !important;
+	font-size: 12px;
+	@media only screen and (min-width: 700px) {
+		font-size: 16px;
+	}
 }
 
 body {
-  margin: 0 1rem;
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  background-color: #282c34;
+	margin: 0 1rem;
+	font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	background-color: #282c34;
 }
 
 #main {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.8rem;
-  @media only screen and (min-width: 700px) {
-    font-size: 1rem;
-  }
-  color: white;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	// font-size: 0.8rem;
+	// @media only screen and (min-width: 700px) {
+	// 	font-size: 1rem;
+	// }
+	color: white;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 
 #logo {
-  max-width: 200px;
-  @media only screen and (min-width: 700px) {
-    max-width: 300px;
-  }
+	max-width: 200px;
+	@media only screen and (min-width: 700px) {
+		max-width: 300px;
+	}
+}
+
+.section {
+	max-width: 600px
 }
 
 #description {
-  max-width: 400px;
 }
 
 #add {
-  padding: 2rem;
-  width: 50px;
+	display: flex;
+}
+
+#features {
+	margin-top: 2rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.social-button-wrapper {
+	margin: 1rem;
+	a {
+		text-decoration: none;
+		color: white;
+	}
 }
 
 .social-button {
-  svg {
-    width: 30px;
-  }
-  display: grid;
-  grid-template-columns: 20% 80%;
-  align-items: center;
-  width: 150px;
-  padding: 0.5rem;
-  border-radius: 9px;
+	svg {
+		width: 1.5rem;
+		margin: 0 auto;
+	}
+	font-size: 1rem;
+	display: grid;
+	grid-template-columns: 2rem auto;
+	text-align: center;
+	align-items: center;
+	width: 8rem;
+	padding: 0.5rem;
+	border-radius: 9px;
+	font-weight: 600;
+	transition-duration: 0.1s;
+	&:hover {
+		transform: translateY(-0.2rem) scale(1.1);
+	}
 }
 
 .color-line {
-  fill: green;
-  background: green;
+	fill: #01B901;
+	background: #01B901;
+}
+
+.color-facebook {
+	fill: #3b5998;
+	background: #3b5998;
+}
+
+.social-button.color-facebook {
+	svg {
+		height: 2rem;
+		margin-bottom: -0.5rem;
+	}
 }
 
 df-messenger div.chat-wrapper[opened="true"] {
-  height: 300px !important;
-  width: 300px;
-  color: red;
+	height: 300px !important;
+	width: 300px;
+	color: red;
+}
+
+.fa-primary {
+	fill: white;
+}
+
+.fa-secondary {
+	fill: rgba(white, 0.7);
 }
