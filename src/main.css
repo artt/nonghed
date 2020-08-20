@@ -1,5 +1,5 @@
 :root {
-  font-size: 12px;
+  font-size: 14px;
 }
 @media only screen and (min-width: 700px) {
   :root {
@@ -8,12 +8,19 @@
 }
 
 body {
-  margin: 0 1rem;
+  margin: 0 2rem;
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   background-color: #282c34;
+}
+body a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+body a:hover {
+  color: white;
 }
 
 #main {
@@ -39,17 +46,64 @@ body {
 }
 
 .section {
-  max-width: 600px;
+  margin-top: 2rem;
+  max-width: 500px;
+}
+@media only screen and (min-width: 700px) {
+  .section {
+    margin-top: 5rem;
+    max-width: 700px;
+  }
 }
 
 #add {
-  display: flex;
+  margin: 0 auto;
+  width: auto;
+  display: inline-flex;
 }
 
-#features {
-  margin-top: 2rem;
+#features-container > div svg {
+  width: 64px;
+}
+
+#features-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+#features-container > div {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: 80px auto;
+  align-items: center;
+  text-align: left;
+}
+#features-container > div div:nth-child(2) {
+  padding-left: 1rem;
+}
+#features-container h3 {
+  margin-top: 0;
+}
+@media only screen and (min-width: 700px) {
+  #features-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #features-container > div {
+    display: block;
+    padding: 0 1rem;
+    text-align: center;
+    margin: 0;
+  }
+  #features-container > div div:nth-child(2) {
+    padding-left: 0;
+  }
+  #features-container h3 {
+    margin-top: 1rem;
+  }
+}
+
+#bottom {
+  height: 5rem;
 }
 
 .social-button-wrapper {
