@@ -6,6 +6,10 @@ import {ReactComponent as FacebookSVG} from './images/facebook.svg';
 import {ReactComponent as DialogueSVG} from './images/dialogue.svg';
 import {ReactComponent as GraphSVG} from './images/graph.svg';
 import {ReactComponent as PiggySVG} from './images/piggy.svg';
+import {ReactComponent as KofiSVG} from './images/kofi.svg';
+import {ReactComponent as QRSVG} from './images/qr.svg';
+import {ReactComponent as QRLineSVG} from './images/qr-line.svg';
+import {ReactComponent as QRPromptPaySVG} from './images/qr-promptpay.svg';
 import useScript from './hooks/useScript';
 
 export default function App() {
@@ -35,6 +39,7 @@ export default function App() {
 								<LineSVG />
 								Add Friend
 							</div>
+							<span class="tooltip"><QRLineSVG /></span>
 						</a>
 					</div>
 					<div className="social-button-wrapper">
@@ -85,12 +90,37 @@ export default function App() {
 				</div>
 			</div>
 
-			<div id="data" className="section">
-				<h2>Available data</h2>
+			<div id="support" className="section">
+				<h2>Support</h2>
+				<p>
+					If you find NongHed useful,
+						please feel free to support me by buying me a cup of coffee,
+						or, if you're in Thailand, do it via PromptPay!
+				</p>
+				<div className="social-button-wrapper">
+					<a href="https://ko-fi.com/L3L625FLR" target="_blank" rel="noopener noreferrer">
+						<div className="social-button color-kofi">
+							<KofiSVG />
+							Buy me a coffee
+						</div>
+					</a>
+				</div>
+				<div className="social-button-wrapper">
+					<a href="https://ko-fi.com/L3L625FLR" target="_blank" rel="noopener noreferrer">
+						<div className="social-button color-qr">
+							<QRSVG />
+							PromptPay me
+						</div>
+						<span class="tooltip"><QRPromptPaySVG /></span>
+					</a>
+				</div>
 			</div>
 			
 			<div id="contact" className="section">
 				<h2>Contact</h2>
+				<p>
+					Please email <a href="mailto:nonghed.bot@gmail.com">nonghed.bot@gmail.com</a> with any questions or suggestions.
+				</p>
 			</div>
 
 			<div id="bottom" className="section">

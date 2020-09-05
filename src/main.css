@@ -112,6 +112,35 @@ body a:hover {
 .social-button-wrapper a {
   text-decoration: none;
   color: white;
+  position: relative;
+}
+.social-button-wrapper a .tooltip {
+  display: block;
+  color: red;
+  position: absolute;
+  background: white;
+  width: 0;
+  height: 0;
+  padding: 0;
+  border-radius: 9px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition-duration: 0.1s;
+}
+.social-button-wrapper a .tooltip svg {
+  width: 100%;
+  height: 100%;
+}
+.social-button-wrapper a:hover .tooltip {
+  display: block;
+  padding: 9px;
+  height: 10rem;
+  width: 10rem;
+}
+
+#support .social-button-wrapper {
+  width: fit-content;
+  margin: 1rem auto;
 }
 
 .social-button {
@@ -121,6 +150,7 @@ body a:hover {
   text-align: center;
   align-items: center;
   width: 8rem;
+  min-height: 1.5rem;
   padding: 0.5rem;
   border-radius: 9px;
   font-weight: 600;
@@ -144,9 +174,37 @@ body a:hover {
   background: #3b5998;
 }
 
+.color-kofi {
+  fill: #29abe0;
+  background: #29abe0;
+}
+
+.color-qr {
+  fill: #0E3D67;
+  background: #0E3D67;
+}
+
 .social-button.color-facebook svg {
   height: 2rem;
   margin-bottom: -0.5rem;
+}
+
+.social-button.color-kofi {
+  width: 10rem;
+}
+.social-button.color-kofi svg {
+  width: 2rem;
+  margin-top: -0.25rem;
+  margin-bottom: -0.25rem;
+}
+
+.social-button.color-qr {
+  width: 10rem;
+}
+.social-button.color-qr svg {
+  fill: white;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 df-messenger div.chat-wrapper[opened=true] {
