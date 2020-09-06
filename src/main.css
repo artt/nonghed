@@ -126,7 +126,6 @@ body a:hover {
 .social-button-wrapper a + .tooltip {
   display: block;
   overflow: hidden;
-  color: red;
   position: absolute;
   background: rgba(255, 255, 255, 0.5);
   width: 0;
