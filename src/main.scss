@@ -1,3 +1,5 @@
+$primary-color: #ff9d00;
+
 :root {
 	// --df-messenger-button-titlebar-color: red !important;
 	font-size: 14px;
@@ -16,10 +18,10 @@ body {
 	text-align: center;
 	background-color: #282c34;
 	a {
-		color: rgba(white, 0.8);
+		color: rgba($primary-color, 0.8);
 		text-decoration: none;
 		&:hover {
-			color: white;
+			color: $primary-color;
 		}
 	}
 }
@@ -107,36 +109,45 @@ body {
 	}
 }
 
+#changelog th {
+	font-weight: normal;
+	text-align: left;
+	padding: 0 1rem;
+}
+
 #bottom {
 	height: 5rem;
 }
 
 .social-button-wrapper {
+	position: relative;
 	margin: 1rem;
 	a {
 		text-decoration: none;
 		color: white;
-		position: relative;
-		.tooltip {
+		&:hover {
+			color: white;
+		}
+		& + .tooltip {
 			display: block;
+			overflow: hidden;
 			color: red;
 			position: absolute;
-			background: white;
+			background: rgba(white, 0.5);
 			width: 0;
 			height: 0;
 			padding: 0;
 			border-radius: 9px;
 			left: 50%;
 			transform: translateX(-50%);
-			svg {
+			svg, img {
 				width: 100%;
 				height: 100%;
 			}
 			transition-duration: 0.1s;
 		}
-		&:hover .tooltip {
+		&:hover + .tooltip {
 			display: block;
-			padding: 9px;
 			height: 10rem;
 			width: 10rem;
 		}
@@ -165,7 +176,7 @@ body {
 	font-weight: 600;
 	transition-duration: 0.1s;
 	&:hover {
-		transform: translateY(-0.2rem) scale(1.1);
+		transform: translateY(-0.1rem) scale(1.1);
 	}
 }
 

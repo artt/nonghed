@@ -9,7 +9,7 @@ import {ReactComponent as PiggySVG} from './images/piggy.svg';
 import {ReactComponent as KofiSVG} from './images/kofi.svg';
 import {ReactComponent as QRSVG} from './images/qr.svg';
 import {ReactComponent as QRLineSVG} from './images/qr-line.svg';
-import {ReactComponent as QRPromptPaySVG} from './images/qr-promptpay.svg';
+import QRPromptPaySVG from './images/qr-promptpay.svg';
 import useScript from './hooks/useScript';
 
 export default function App() {
@@ -39,8 +39,8 @@ export default function App() {
 								<LineSVG />
 								Add Friend
 							</div>
-							<span class="tooltip"><QRLineSVG /></span>
 						</a>
+						<span className="tooltip"><QRLineSVG /></span>
 					</div>
 					<div className="social-button-wrapper">
 						<a href="https://www.facebook.com/nonghed.bot" target="_blank" rel="noopener noreferrer">
@@ -90,6 +90,42 @@ export default function App() {
 				</div>
 			</div>
 
+			<div id="changelog" className="section">
+				<h2>Changelog</h2>
+				<table>
+					<col width="20%" />
+					<col width="80%" />
+					<tr>
+						<th>20.09.20</th>
+						<th>Initial public release</th>
+					</tr>
+					<tr>
+						<th>20.07.30</th>
+						<th>Added foreign exchange data</th>
+					</tr>
+					<tr>
+						<th>20.07.27</th>
+						<th>Facebook chatbot</th>
+					</tr>
+					<tr>
+						<th>19.10.20</th>
+						<th>Implement yield curve</th>
+					</tr>
+					<tr>
+						<th>19.08.08</th>
+						<th>Unofficial launch</th>
+					</tr>
+					<tr>
+						<th>19.07.28</th>
+						<th>Automatic daily database update</th>
+					</tr>
+					<tr>
+						<th>19.07.16</th>
+						<th>Initial GitHub commit</th>
+					</tr>
+				</table>
+			</div>
+
 			<div id="support" className="section">
 				<h2>Support</h2>
 				<p>
@@ -106,13 +142,13 @@ export default function App() {
 					</a>
 				</div>
 				<div className="social-button-wrapper">
-					<a href="https://ko-fi.com/L3L625FLR" target="_blank" rel="noopener noreferrer">
+					<a href={window.matchMedia( "(hover: none)" ).matches ? QRPromptPaySVG : '#'} target="_blank" rel="noopener noreferrer">
 						<div className="social-button color-qr">
 							<QRSVG />
 							PromptPay me
 						</div>
-						<span class="tooltip"><QRPromptPaySVG /></span>
 					</a>
+					<span className="tooltip"><img src={QRPromptPaySVG} alt="QR code for PromptPay" /></span>
 				</div>
 			</div>
 			
@@ -127,24 +163,12 @@ export default function App() {
 			</div>
 			
 			<df-messenger
-			  intent="WELCOME"
-			  chat-title="Nong Hed"
-			  agent-id="38a9f586-a309-460a-a966-d921f92bb809"
-			  language-code="en"
-			  wait-open={true}
+				intent="WELCOME"
+				chat-title="NongHed"
+				agent-id="38a9f586-a309-460a-a966-d921f92bb809"
+				language-code="en"
+				wait-open={true}
 			/>
 		</div>
 	);
 }
-
-// types of data available
-// contact
-// 
-// <a
-			// 	className="App-link"
-			// 	href="https://reactjs.org"
-			// 	target="_blank"
-			// 	rel="noopener noreferrer"
-			// >
-			// 	Learn React
-			// </a>
