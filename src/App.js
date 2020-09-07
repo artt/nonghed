@@ -172,7 +172,7 @@ export default function App() {
 					</a>
 				</div>
 				<div className="social-button-wrapper">
-					<a href={window.matchMedia( "(pointer: none)" ).matches ? QRPromptPaySVG : 'javascript:void(0);'}>
+					<a href="javascript:void(0);" target="_blank" rel="noopener noreferrer">
 						<div className="social-button color-qr">
 							<QRSVG />
 							PromptPay me

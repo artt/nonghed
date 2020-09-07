@@ -146,7 +146,8 @@ body {
 			}
 			transition-duration: 0.1s;
 		}
-		&:hover + .tooltip {
+		&:hover + .tooltip,
+		&:focus + .tooltip {
 			display: block;
 			height: 10rem;
 			width: 10rem;
