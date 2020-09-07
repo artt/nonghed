@@ -123,7 +123,8 @@ body {
 .social-button-wrapper {
 	position: relative;
 	margin: 1rem;
-	a {
+	a, .nolink {
+		cursor: pointer;
 		text-decoration: none;
 		color: white;
 		&:hover {

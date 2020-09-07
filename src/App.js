@@ -172,12 +172,12 @@ export default function App() {
 					</a>
 				</div>
 				<div className="social-button-wrapper">
-					<a href="javascript:void(0);" target="_blank" rel="noopener noreferrer">
+					<div className="nolink">
 						<div className="social-button color-qr">
 							<QRSVG />
 							PromptPay me
 						</div>
-					</a>
+					</div>
 					<span className="tooltip"><img src={QRPromptPaySVG} alt="QR code for PromptPay" /></span>
 				</div>
 			</div>
