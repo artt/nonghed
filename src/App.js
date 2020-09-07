@@ -157,7 +157,7 @@ export default function App() {
 			</div>
 
 			<div id="support" className="section">
-				<h2>Support</h2>
+				<h2>Support me</h2>
 				<p>
 					If you find NongHed useful,
 						please feel free to support me by buying me a cup of coffee,
