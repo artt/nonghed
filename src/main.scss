@@ -148,7 +148,8 @@ body {
 			transition-duration: 0.1s;
 		}
 		&:hover + .tooltip,
-		&:focus + .tooltip {
+		&:focus + .tooltip,
+		&:active + .tooltip {
 			display: block;
 			height: 10rem;
 			width: 10rem;

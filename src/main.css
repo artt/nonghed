@@ -142,7 +142,7 @@ body a:hover {
   width: 100%;
   height: 100%;
 }
-.social-button-wrapper a:hover + .tooltip, .social-button-wrapper a:focus + .tooltip, .social-button-wrapper .nolink:hover + .tooltip, .social-button-wrapper .nolink:focus + .tooltip {
+.social-button-wrapper a:hover + .tooltip, .social-button-wrapper a:focus + .tooltip, .social-button-wrapper a:active + .tooltip, .social-button-wrapper .nolink:hover + .tooltip, .social-button-wrapper .nolink:focus + .tooltip, .social-button-wrapper .nolink:active + .tooltip {
   display: block;
   height: 10rem;
   width: 10rem;
