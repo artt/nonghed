@@ -105,7 +105,8 @@ body a:hover {
 #changelog th {
   font-weight: normal;
   text-align: left;
-  padding: 0 1rem;
+  padding: 0.2rem 1rem;
+  vertical-align: top;
 }
 
 #bottom {
@@ -127,13 +128,13 @@ body a:hover {
   display: block;
   overflow: hidden;
   position: absolute;
-  background: rgba(255, 255, 255, 0.5);
+  background: white;
   width: 0;
   height: 0;
   padding: 0;
   border-radius: 9px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(1px);
   transition-duration: 0.1s;
 }
 .social-button-wrapper a + .tooltip svg, .social-button-wrapper a + .tooltip img {

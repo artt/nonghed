@@ -93,36 +93,36 @@ export default function App() {
 			<div id="changelog" className="section">
 				<h2>Changelog</h2>
 				<table>
-					<col width="20%" />
-					<col width="80%" />
-					<tr>
-						<th>20.09.20</th>
-						<th>Initial public release</th>
-					</tr>
-					<tr>
-						<th>20.07.30</th>
-						<th>Added foreign exchange data</th>
-					</tr>
-					<tr>
-						<th>20.07.27</th>
-						<th>Facebook chatbot</th>
-					</tr>
-					<tr>
-						<th>19.10.20</th>
-						<th>Implement yield curve</th>
-					</tr>
-					<tr>
-						<th>19.08.08</th>
-						<th>Unofficial launch</th>
-					</tr>
-					<tr>
-						<th>19.07.28</th>
-						<th>Automatic daily database update</th>
-					</tr>
-					<tr>
-						<th>19.07.16</th>
-						<th>Initial GitHub commit</th>
-					</tr>
+					<tbody>
+						<tr>
+							<th>20.09.20</th>
+							<th>Initial public release</th>
+						</tr>
+						<tr>
+							<th>20.07.30</th>
+							<th>Added foreign exchange data</th>
+						</tr>
+						<tr>
+							<th>20.07.27</th>
+							<th>Facebook chatbot</th>
+						</tr>
+						<tr>
+							<th>19.10.20</th>
+							<th>Implement yield curve</th>
+						</tr>
+						<tr>
+							<th>19.08.08</th>
+							<th>Unofficial launch</th>
+						</tr>
+						<tr>
+							<th>19.07.28</th>
+							<th>Automatic daily database update</th>
+						</tr>
+						<tr>
+							<th>19.07.16</th>
+							<th>Initial GitHub commit</th>
+						</tr>
+					</tbody>
 				</table>
 			</div>
 
