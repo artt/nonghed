@@ -17,12 +17,39 @@ export default function App() {
 	useScript('https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1');
 	useScript('https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js');
 
+	function moveEye(mX, mY, eye, center) {
+		const theta = Math.atan2(mY - center[1], mX - center[0])
+		const r = Math.min(Math.sqrt(Math.pow(mX - center[0], 2) + Math.pow(mY - center[1], 2)), 32.5)
+			// 32.5 = the width of the glasses - the width of the eyes in the original size
+		eye.setAttribute('transform', `translate(${r * Math.cos(theta)}, ${r * Math.sin(theta)})`)
+	}
+
+	function getCenter(glasses) {
+		const tmp = glasses.getBoundingClientRect()
+		return [tmp.left + tmp.width/2, tmp.top + tmp.height/2]
+	}
+
+	function eyesHandler(e) {
+		const eyes_left = document.getElementById('eyes_left')
+		const eyes_right = document.getElementById('eyes_right')
+		const glasses_left = document.getElementById('glasses_left')
+		const glasses_right = document.getElementById('glasses_right')
+		moveEye(e.clientX, e.clientY, eyes_left, getCenter(glasses_left))
+		moveEye(e.clientX, e.clientY, eyes_right, getCenter(glasses_right))
+	}
+
+	React.useEffect(() => {
+		document.addEventListener('mousemove', eyesHandler)
+		return () => {
+			document.removeEventListener('mousemove', eyesHandler)
+		}
+	}, [])
 
 	return (
 		<div id="main">
 
 			<div id="header" className="section">
-				<Logo id="logo"/>
+				<Logo id="logo" />
 				<div id="description">
 					<h1>NongHed</h1>
 					<p>
@@ -62,7 +89,7 @@ export default function App() {
 						</div>
 						<div>
 							<h3>Natural</h3>
-							Powered by <a href="https://cloud.google.com/dialogflow/docs/">Dialogflow</a>,
+							Powered by <a href="https://cloud.google.com/dialogflow/docs/" target="_blank" rel="noopener noreferrer">Dialogflow</a>,
 								you can talk naturally with NongHed.
 							There's no predefined pattern you need to memorize.
 						</div>
@@ -73,8 +100,9 @@ export default function App() {
 						</div>
 						<div>
 							<h3>Accurate</h3>
-							With live data from the Bank of Thailand, ThaiBMA, and more,
-								you can be sure that the data you get is up-to-date.
+							With live data from the <a href="https://apiportal.bot.or.th/bot/public/" target="_blank" rel="noopener noreferrer">Bank of Thailand</a>
+								, <a href="http://www.thaibma.or.th/EN/Market/YieldCurve/Government.aspx" target="_blank" rel="noopener noreferrer">ThaiBMA</a>, and more,
+								you can be sure that the data you get is up to date.
 						</div>
 					</div>
 					<div>
