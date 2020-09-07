@@ -160,7 +160,7 @@ export default function App() {
 				<h2>Support me</h2>
 				<p>
 					If you find NongHed useful,
-						please feel free to support me by buying me a cup of coffee,
+						please consider supporting me by buying me a cup of coffee,
 						or, if you're in Thailand, do it via PromptPay!
 				</p>
 				<div className="social-button-wrapper">
@@ -172,7 +172,7 @@ export default function App() {
 					</a>
 				</div>
 				<div className="social-button-wrapper">
-					<a href={window.matchMedia( "(hover: none)" ).matches ? QRPromptPaySVG : '#'} target="_blank" rel="noopener noreferrer">
+					<a href={window.matchMedia( "(pointer: none)" ).matches ? QRPromptPaySVG : 'javascript:void(0);'}>
 						<div className="social-button color-qr">
 							<QRSVG />
 							PromptPay me
