@@ -123,7 +123,7 @@ body {
 .social-button-wrapper {
 	position: relative;
 	margin: 1rem;
-	a, .nolink {
+	a {
 		cursor: pointer;
 		text-decoration: none;
 		color: white;
@@ -147,9 +147,7 @@ body {
 			}
 			transition-duration: 0.1s;
 		}
-		&:hover + .tooltip,
-		&:focus + .tooltip,
-		&:active + .tooltip {
+		&:hover + .tooltip {
 			display: block;
 			height: 10rem;
 			width: 10rem;
