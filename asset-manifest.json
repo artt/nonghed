@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/nonghed/static/css/main.bf00e7d7.chunk.css",
+    "main.js": "/nonghed/static/js/main.cc4a02d5.chunk.js",
+    "main.js.map": "/nonghed/static/js/main.cc4a02d5.chunk.js.map",
+    "runtime-main.js": "/nonghed/static/js/runtime-main.b558640d.js",
+    "runtime-main.js.map": "/nonghed/static/js/runtime-main.b558640d.js.map",
+    "static/js/2.5c13d8c0.chunk.js": "/nonghed/static/js/2.5c13d8c0.chunk.js",
+    "static/js/2.5c13d8c0.chunk.js.map": "/nonghed/static/js/2.5c13d8c0.chunk.js.map",
+    "index.html": "/nonghed/index.html",
+    "precache-manifest.1275499a073995806f83fa933399e6b3.js": "/nonghed/precache-manifest.1275499a073995806f83fa933399e6b3.js",
+    "service-worker.js": "/nonghed/service-worker.js",
+    "static/css/main.bf00e7d7.chunk.css.map": "/nonghed/static/css/main.bf00e7d7.chunk.css.map",
+    "static/js/2.5c13d8c0.chunk.js.LICENSE.txt": "/nonghed/static/js/2.5c13d8c0.chunk.js.LICENSE.txt",
+    "static/media/dialogue.efa1ad7f.svg": "/nonghed/static/media/dialogue.efa1ad7f.svg",
+    "static/media/facebook.a0233c4f.svg": "/nonghed/static/media/facebook.a0233c4f.svg",
+    "static/media/graph.30d58c1b.svg": "/nonghed/static/media/graph.30d58c1b.svg",
+    "static/media/kofi.70b4db36.svg": "/nonghed/static/media/kofi.70b4db36.svg",
+    "static/media/line.367d4864.svg": "/nonghed/static/media/line.367d4864.svg",
+    "static/media/piggy.6c4a212f.svg": "/nonghed/static/media/piggy.6c4a212f.svg",
+    "static/media/profile.dc29ba75.svg": "/nonghed/static/media/profile.dc29ba75.svg",
+    "static/media/qr-line.49451d01.svg": "/nonghed/static/media/qr-line.49451d01.svg",
+    "static/media/qr-promptpay.svg": "/nonghed/static/media/qr-promptpay.10b73ffc.svg",
+    "static/media/qr.6cb6035f.svg": "/nonghed/static/media/qr.6cb6035f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b558640d.js",
+    "static/js/2.5c13d8c0.chunk.js",
+    "static/css/main.bf00e7d7.chunk.css",
+    "static/js/main.cc4a02d5.chunk.js"
+  ]
+}
