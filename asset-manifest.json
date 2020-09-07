@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/nonghed/static/css/main.cfacece7.chunk.css",
+    "main.css": "/nonghed/static/css/main.49bb8c84.chunk.css",
     "main.js": "/nonghed/static/js/main.1a5db45e.chunk.js",
     "main.js.map": "/nonghed/static/js/main.1a5db45e.chunk.js.map",
     "runtime-main.js": "/nonghed/static/js/runtime-main.b558640d.js",
@@ -8,9 +8,9 @@
     "static/js/2.32a507a5.chunk.js": "/nonghed/static/js/2.32a507a5.chunk.js",
     "static/js/2.32a507a5.chunk.js.map": "/nonghed/static/js/2.32a507a5.chunk.js.map",
     "index.html": "/nonghed/index.html",
-    "precache-manifest.18b21c01b22fff54c21e9c8648303372.js": "/nonghed/precache-manifest.18b21c01b22fff54c21e9c8648303372.js",
+    "precache-manifest.9fe7fe7ca3dc87f78bed2bef6653f0b5.js": "/nonghed/precache-manifest.9fe7fe7ca3dc87f78bed2bef6653f0b5.js",
     "service-worker.js": "/nonghed/service-worker.js",
-    "static/css/main.cfacece7.chunk.css.map": "/nonghed/static/css/main.cfacece7.chunk.css.map",
+    "static/css/main.49bb8c84.chunk.css.map": "/nonghed/static/css/main.49bb8c84.chunk.css.map",
     "static/js/2.32a507a5.chunk.js.LICENSE.txt": "/nonghed/static/js/2.32a507a5.chunk.js.LICENSE.txt",
     "static/media/dialogue.efa1ad7f.svg": "/nonghed/static/media/dialogue.efa1ad7f.svg",
     "static/media/facebook.a0233c4f.svg": "/nonghed/static/media/facebook.a0233c4f.svg",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.b558640d.js",
     "static/js/2.32a507a5.chunk.js",
-    "static/css/main.cfacece7.chunk.css",
+    "static/css/main.49bb8c84.chunk.css",
     "static/js/main.1a5db45e.chunk.js"
   ]
 }
