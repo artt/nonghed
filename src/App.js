@@ -11,6 +11,7 @@ import {ReactComponent as QRSVG} from './images/qr.svg';
 import {ReactComponent as QRLineSVG} from './images/qr-line.svg';
 import QRPromptPaySVG from './images/qr-promptpay.svg';
 import useScript from './hooks/useScript';
+import NongHed from './NongHed/NongHed'
 
 export default function App() {
 
@@ -51,7 +52,10 @@ export default function App() {
 		<div id="main">
 
 			<div id="header" className="section">
-				<Logo id="logo" />
+				{/*<Logo id="logo" />*/}
+				<div id="logo">
+					<NongHed />
+				</div>
 				<div id="description">
 					<h1>NongHed</h1>
 					<p>
