@@ -106,8 +106,7 @@ export default function App() {
 						</div>
 						<div>
 							<h3>Accurate</h3>
-							With live data from the <a href="https://apiportal.bot.or.th/bot/public/" target="_blank" rel="noopener noreferrer">Bank of Thailand</a>
-								, <a href="http://www.thaibma.or.th/EN/Market/YieldCurve/Government.aspx" target="_blank" rel="noopener noreferrer">ThaiBMA</a>, and more,
+							With data updated daily from the <a href="https://apiportal.bot.or.th/bot/public/" target="_blank" rel="noopener noreferrer">Bank of Thailand</a> as well as live data from other sources,
 								you can be sure that the data you get is up to date.
 						</div>
 					</div>
