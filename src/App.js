@@ -1,6 +1,5 @@
 import React from 'react';
 import './main.css';
-import {ReactComponent as Logo} from './images/profile.svg';
 import {ReactComponent as LineSVG} from './images/line.svg';
 import {ReactComponent as FacebookSVG} from './images/facebook.svg';
 import {ReactComponent as DialogueSVG} from './images/dialogue.svg';
@@ -12,6 +11,7 @@ import {ReactComponent as QRLineSVG} from './images/qr-line.svg';
 import QRPromptPaySVG from './images/qr-promptpay.svg';
 import useScript from './hooks/useScript';
 import NongHed from './NongHed/NongHed'
+import ReactGA from 'react-ga'
 
 export default function App() {
 
@@ -19,33 +19,8 @@ export default function App() {
 	useScript('https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js');
 
 	React.useEffect(() => {
-
-		function moveEye(mX, mY, eye, center) {
-			const theta = Math.atan2(mY - center[1], mX - center[0])
-			const r = Math.min(Math.sqrt(Math.pow(mX - center[0], 2) + Math.pow(mY - center[1], 2)), 32.5)
-				// 32.5 = the width of the glasses - the width of the eyes in the original size
-			eye.setAttribute('transform', `translate(${r * Math.cos(theta)}, ${r * Math.sin(theta)})`)
-		}
-
-		function getCenter(glasses) {
-			const tmp = glasses.getBoundingClientRect()
-			return [tmp.left + tmp.width/2, tmp.top + tmp.height/2]
-		}
-
-		function eyesHandler(e) {
-			const eyes_left = document.getElementById('eyes_left')
-			const eyes_right = document.getElementById('eyes_right')
-			const glasses_left = document.getElementById('glasses_left')
-			const glasses_right = document.getElementById('glasses_right')
-			moveEye(e.clientX, e.clientY, eyes_left, getCenter(glasses_left))
-			moveEye(e.clientX, e.clientY, eyes_right, getCenter(glasses_right))
-		}
-
-		document.addEventListener('mousemove', eyesHandler)
-		return () => {
-			document.removeEventListener('mousemove', eyesHandler)
-		}
-
+		ReactGA.initialize('UA-2995735-6')
+		ReactGA.pageview('landing')
 	}, [])
 
 	return (
@@ -63,6 +38,9 @@ export default function App() {
 							up-to-date economic and financial data for Thailand.
 						Simply chat using the icon in the corner below,
 							or add NongHed as a friend on LINE or Facebook!
+					</p>
+					<p>
+						Read more about me on <a href="https://artt.github.io/blog/2020/nonghed/" target="_blank" rel="noopener noreferrer">this blog post</a>.
 					</p>
 				</div>
 				<div id="add">
