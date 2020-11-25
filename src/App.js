@@ -106,6 +106,10 @@ export default function App() {
 				<table>
 					<tbody>
 						<tr>
+							<th>20.11.18</th>
+							<th>Added price indices data from MOC</th>
+						</tr>
+						<tr>
 							<th>20.09.20</th>
 							<th>Initial public release</th>
 						</tr>
