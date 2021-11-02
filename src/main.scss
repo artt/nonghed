@@ -158,7 +158,7 @@ body {
 }
 
 #support .social-button-wrapper {
-	width: fit-content;
+	width: 10rem;
 	margin: 1rem auto;
 }
 
@@ -211,7 +211,7 @@ body {
 }
 
 .social-button.color-kofi {
-  width: 10rem;
+  width: 100%;
   svg {
     width: 2rem;
     margin-top: -0.25rem;
@@ -220,7 +220,7 @@ body {
 }
 
 .social-button.color-qr {
-  width: 10rem;
+  width: 100%;
   svg {
   	fill: white;
     width: 1.5rem;

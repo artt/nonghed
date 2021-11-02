@@ -1,5 +1,5 @@
 import React from 'react';
-import './main.css';
+import './main.scss';
 import {ReactComponent as LineSVG} from './images/line.svg';
 import {ReactComponent as FacebookSVG} from './images/facebook.svg';
 import {ReactComponent as DialogueSVG} from './images/dialogue.svg';
