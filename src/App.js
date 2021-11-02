@@ -40,7 +40,7 @@ export default function App() {
 							or add NongHed as a friend on LINE or Facebook!
 					</p>
 					<p>
-						Read more about me on <a href="https://artt.github.io/blog/2020/nonghed/" target="_blank" rel="noopener noreferrer">this blog post</a>.
+						Read more about me on <a href="https://artt.dev/blog/2020/nonghed/" target="_blank" rel="noopener noreferrer">this blog post</a>.
 					</p>
 				</div>
 				<div id="add">
