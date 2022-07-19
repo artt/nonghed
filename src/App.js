@@ -106,6 +106,10 @@ export default function App() {
 				<table>
 					<tbody>
 						<tr>
+							<th>22.07.11</th>
+							<th>Automated GDP data updates</th>
+						</tr>
+						<tr>
 							<th>20.11.18</th>
 							<th>Added price indices data from MOC</th>
 						</tr>
