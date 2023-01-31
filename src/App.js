@@ -174,7 +174,7 @@ export default function App() {
 			<div id="contact" className="section">
 				<h2>Contact</h2>
 				<p>
-					Please email <a href="mailto:nonghed.bot@gmail.com">nonghed.bot@gmail.com</a> with any questions or suggestions.
+					Please email <a href="mailto:nonghed@artt.dev">nonghed@artt.dev</a> with any questions or suggestions.
 				</p>
 			</div>
 
